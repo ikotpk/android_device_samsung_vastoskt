@@ -36,16 +36,16 @@
 
 # These are the hardware-specific configuration files
 DEVICE_PACKAGE_OVERLAYS += \
-	device/samsung/galaxysmtd/overlay
+	device/samsung/vastoskt/overlay
 
 PRODUCT_COPY_FILES := \
-	device/samsung/galaxysmtd/prebuilts/etc/asound.conf:system/etc/asound.conf
+	device/samsung/vastoskt/prebuilts/etc/asound.conf:system/etc/asound.conf
 
 # Prebuilt kl keymaps
 PRODUCT_COPY_FILES += \
-	device/samsung/galaxysmtd/prebuilts/usr/keylaout/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
-	device/samsung/galaxysmtd/prebuilts/usr/keylaout/melfas-touchkey.kl:system/usr/keylayout/melfas-touchkey.kl \
-	device/samsung/galaxysmtd/prebuilts/usr/keychars/melfas-touchkey.kcm.bin:system/usr/keychars/melfas-touchkey.kcm.bin
+	device/samsung/vastoskt/prebuilts/usr/keylaout/aries-keypad.kl:system/usr/keylayout/aries-keypad.kl \
+	device/samsung/vastoskt/prebuilts/usr/keylaout/melfas-touchkey.kl:system/usr/keylayout/melfas-touchkey.kl \
+	device/samsung/vastoskt/prebuilts/usr/keychars/melfas-touchkey.kcm.bin:system/usr/keychars/melfas-touchkey.kcm.bin
 
 # We have FFC
 PRODUCT_COPY_FILES += \
@@ -58,4 +58,4 @@ $(call inherit-product, device/samsung/aries-common/device_base.mk)
 # half of the device-specific product definition file takes care
 # of the aspects that require proprietary drivers that aren't
 # commonly available
-$(call inherit-product-if-exists, vendor/samsung/galaxysmtd/galaxysmtd-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/vastoskt/vastoskt-vendor.mk)
